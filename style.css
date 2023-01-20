@@ -1,7 +1,51 @@
 body{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
-header{
-    display:block;
+.container_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container_data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+.img {
+  max-width: 100%;
+  max-height:100%;
+  align-items: center;
+  border: 3px solid black;
+  padding: 5px 5px 0px 5px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10%;
+}
+
+.text_data {
+  font-size: 20px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.separator {
+    height:4px;
+    border-width:0;
+    color:orange;
+    background-color:orange;
+    border-radius: 50%;
+}
+
+.titles{
+    font-size: 20px;
+    padding-right: 50px;
+    text-align: left;
+    font-weight: bold;
 }
