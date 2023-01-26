@@ -1,5 +1,6 @@
 body{
-    background-color: #ffffff;
+    background-color: #f5f6f7;
+    font-family: "Times New Roman", Arial;
 }
 
 .container_name {
@@ -8,14 +9,13 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .container_data {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: left;
+    align-items: center;
+    justify-content: justify;
     flex-wrap: wrap;
   }
 
@@ -31,7 +31,6 @@ body{
 
 .text_data {
   font-size: 20px;
-  padding-left: 50px;
   text-align: left;
 }
 
@@ -48,4 +47,21 @@ body{
     padding-right: 50px;
     text-align: left;
     font-weight: bold;
+}
+
+.text_titles{
+  border: 3px solid black;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  color: #0000FF;
+  text-decoration: underline #0000FF
+}
+
+.data{
+  display: none;
+}
+
+.titles:hover{
+  cursor: pointer;
 }
