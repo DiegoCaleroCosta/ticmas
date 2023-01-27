@@ -35,11 +35,11 @@ body{
 }
 
 .separator {
-    height:4px;
-    border-width:0;
-    color:orange;
-    background-color:orange;
-    border-radius: 50%;
+  height:4px;
+  border-width:0;
+  color:#555555;
+  background-color:#555555;
+  border-radius: 50%;
 }
 
 .titles{
@@ -50,18 +50,26 @@ body{
 }
 
 .text_titles{
-  border: 3px solid black;
   padding: 5px 0px 5px 10px;
   margin: 10px 10px 10px 10px;
   text-align: center;
   color: #0000FF;
-  text-decoration: underline #0000FF
+  text-decoration: underline #0000FF;
+  display: block;
+}
+
+.buttons{
+  text-align: center;
+  color: #0000FF;
+  font-size: 2em;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .data{
   display: none;
 }
 
-.titles:hover{
+.buttons:hover{
   cursor: pointer;
 }

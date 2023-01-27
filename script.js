@@ -7,22 +7,34 @@ fetch('https://randomuser.me/api/')
     $('#phone').text(`Phone: ${UserData.phone}`);
     $('#cell').text(`Cell: ${UserData.cell}`);
     $('#address').text(`${UserData.location.city}, ${UserData.location.state}, ${UserData.location.country}`);
-
-    console.log(UserData);
-
 });
 
-$('.titles_E').click(() => {
-    $('.data').hide();
-    $('.Education').show();
+$('.button_E').click(() => {
+    $('.Education').toggle("fast","linear",() => {
+      if($('.Education').css('display') =='none'){
+        $('.button_E').text(`+`)  
+      }else{
+        $('.button_E').text(`-`)  
+      }
+      });
   });
 
-$('.titles_W').click(() => {
-  $('.data').hide();
-  $('.Works').show();
+$('.button_W').click(() => {
+  $('.Works').toggle("fast","linear",() => {
+  if($('.Works').css('display') =='none'){
+    $('.button_W').text(`+`)  
+  }else{
+    $('.button_W').text(`-`)  
+  }
+  });
 });
   
-$('.titles_S').click(() => {
-  $('.data').hide();
-  $('.Skills').show();
+$('.button_S').click(() => {
+  $('.Skills').toggle("fast","linear",() => {
+    if($('.Skills').css('display') =='none'){
+      $('.button_S').text(`+`)  
+    }else{
+      $('.button_S').text(`-`)  
+    }
+    });
   });
