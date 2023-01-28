@@ -1,3 +1,8 @@
+//Para el proyecto utilizo jquery
+
+///////////////////////////////////////////////
+//Obtengo datos random y los utilizo para el CV
+///////////////////////////////////////////////
 fetch('https://randomuser.me/api/')
   .then(response => response.json())
   .then(data => {const UserData = data.results[0];
@@ -9,6 +14,10 @@ fetch('https://randomuser.me/api/')
     $('#address').text(`${UserData.location.city}, ${UserData.location.state}, ${UserData.location.country}`);
 });
 
+
+///////////////////////////////////////////////
+//Configuro el comportamiento de los botones
+///////////////////////////////////////////////
 $('.button_E').click(() => {
     $('.Education').toggle("fast","linear",() => {
       if($('.Education').css('display') =='none'){
